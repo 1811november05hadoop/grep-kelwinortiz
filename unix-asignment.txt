@@ -1,0 +1,53 @@
+1 - List all the cities that start with the letter "Z"
+
+	grep '^Z' cities.txt
+
+
+2 - List the cities that end with the word "gan"
+
+	grep 'gan$' cities.txt
+
+
+3 - List the cities that start with "A", "D", or "E"
+
+	grep '^[A,B,E]' cities.txt
+
+	grep -c '^[A,B,E]' cities.txt
+
+
+4 - List all the cities that have "a" as their second letter, and "r" as their third letter
+ 
+	grep '\<.ar' cities.txt
+
+	grep -c '\<.ar' cities.txt
+
+
+5 - List the cities that don't start with the letter "C"
+
+	grep -v '^C' cities.txt
+
+	grep -cv '^C' cities.txt
+
+
+6 - List the cities that have at least 14 characters
+
+
+
+
+7 - Count how many cities start with the letter "B"
+
+	grep -c '^B' cities.txt
+
+
+8 - Count how many times the letter "d" repeats
+
+	fgrep -o d cities.txt | wc -l
+
+
+9 - List the cities that end with the same letter, twice
+
+
+
+
+10 - List the palindrome cities with five characters
+
